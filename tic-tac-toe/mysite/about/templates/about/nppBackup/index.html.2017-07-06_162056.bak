@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+JitPaul
+</title>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static "about/styles.css" %}"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script>
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();   
+});
+   
+$(document).ready(function(){
+                  $("a").on('click', function(event) {
+                                      if (this.hash !== "") {
+                                         event.preventDefault();
+                                         var hash = this.hash;
+                                         $('html, body').animate({
+                                                          scrollTop: $(hash).offset().top
+                                                         }, 800, function(){
+                                                                  window.location.hash = hash;
+                                                                 });
+                                      }
+                           });
+                  });			  
+</script>
+<style>
+
+  p.text-justify
+  {
+    font-family:"Times New Roman", Georgia, Serif;
+  }
+  
+  .text-justify2
+  {
+    
+	font-size:20px;
+	padding: 40px;
+  }
+  
+  p.text-center
+  {
+    font-family:"Times New Roman", Georgia, Serif;
+	margin: 40px;
+  }
+  #foot
+  {
+     text-align:center;
+  }
+   
+</style>
+</head>
+
+
+
+<body>
+
+<article>
+
+<section>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#section0"></a>
+    </div>
+    <ul class="nav navbar-nav">
+    <li class="active"><a href="#section0">Home</a></li>
+    <li><a href="#section1">Projects</a></li>
+    <li><a href="#section2">Experience</a></li>
+	<li><a href="#section3">Education</a></li>
+	<li><a href="#section4">Resume</a></li>
+	<li><a href="#section5">Contact Me</a></li>
+    </ul>
+  </div>
+</nav>
+</section>
+
+<section id="section0">
+<br/><br/>
+<br/><br/>
+<header>
+</header>
+<div class="container">
+<div class="row">
+    <div class="col-sm-3 text-justify text-justify2">&nbsp&nbsp&nbsp<a data-toggle="tooltip" title="+1 (469) 664-7975" href ="tel:14696647975" ><i class="material-icons" style="font-size:36px">call</i></a></div>
+    <div class="col-sm-3 text-justify text-justify2">&nbsp&nbsp&nbsp<a data-toggle="tooltip" title="paul.jitin@gmail.com" href ="mailto:paul.jitin@gmail.com" ><i class="material-icons" style="font-size:36px">email</i></a></div>
+    <div class="col-sm-3 text-justify text-justify2">&nbsp&nbsp&nbsp<a data-toggle="tooltip" title="Github" target="_blank" href ="https://github.com/jitpaul" ><i class="fa fa-github-square" style="font-size:36px"></i></a></div>
+    <div class="col-sm-3 text-justify text-justify2">&nbsp&nbsp&nbsp<a data-toggle="tooltip" title="Linkedin" target="_blank" href ="https://www.linkedin.com/in/jithinpaul/" ><i class="fa fa-linkedin-square" style="font-size:36px"></i></a></div>
+</div>
+<p class="text-justify text-justify2">
+<em>Hello There:), here's my brief intro!<br/><br/>
+
+My name is Jithin Paul and I am a graduate Student in Computer Science at the University of Texas at Dallas. I completed my bachelors degree
+in Computer Science from National institute of Technology- Calicut. In my final year at college, I was able to secure a job at Oracle Corporation 
+where I spent my next four years. I worked as an Applications Engineer within the HCM and Payroll module of the PeopleSoft Enterprise-an
+ERP software owned by Oracle.<br/><br/>
+
+I moved to the United States in the Fall of 2016 to pursue my Masters degree and I will graduate in December 2017.:)
+<br/><br/>
+The bachelor's degree and current master’s degree in CS have really helped build a strong base in the Computer Science fundamentals. My stint at 
+Oracle gave me a comprehensive exposure to the design and development cycles of a commercial software. I can confidently say that I am self-managed but a 
+committed team player with good problem solving and communication skills.</em>
+</p>
+</div>
+
+</section>
+
+<section id="section1">
+<br/><br/>
+<header>
+<h2 class="text-center text-primary">PROJECTS</h2>
+</header>
+<div class="container">
+<p class="text-justify text-justify2">
+
+<strong><a target="_blank" href ="http://localhost:8000/tictactoe/">Tic Tac Toe</a></strong><br/>                                                               	                                                   
+●	Game was written in Python and uses the recursive minimax algorithm. I made it into a Web application using the Django framework. <br/>
+<br/><br/>
+
+<strong>In Memory File System</strong><br/>                                                               	                                                   
+●	In-memory file system was written in Visual C++. It allows all the basic operations like creating, deleting and moving of files and 
+directories, reading and writing of files etc. Users can also specify the memory size limit for the system in order to prevent the dynamic growth 
+It also provides an option to write the data from the file system to disk at periodic intervals.<br/>
+<br/><br/>
+
+<strong>Asynchronous Canvas Sharing</strong> <br/>               
+●	This web based tool was built using SVG,jQuery and MYSQL. It allows multiple users to share a drawing board and make changes to it in real-time. It 
+also includes a text chat with predictive texting. <br/>
+<br/><br/>
+
+<strong><a target="_blank" href ="http://www.1000smiles.in/">www.1000smiles.in</a></strong><br/>                                               
+●	I volunteered to design the website for 1000smiles - an NGO based in India that focuses primarily on the welfare of underprivileged children.
+It was built using Drupal CMS and I used some basic SEO techniques to improve the site's visibility. <br/>	
+<br/><br/>
+
+
+</p>
+<br/>
+</div>
+</section>
+
+
+<section id="section2">
+<br/><br/>
+<header>
+<h2 class="text-center text-primary">EXPERIENCE</h2>
+</header>
+<div class="container">
+<p class="text-justify text-justify2">
+<strong>Oracle Corporation, Senior Applications Engineer, (July 2015- July 2016)</strong><br/>
+Single handedly designed and implemented a new Japanese HR software ­called ‘My Number’ based on an agile based iterative development process, using  application level encryption using symmetric technique, Object Oriented Programming, role based security and workflow self service.
+Customer base for the HR Japan product increased threefold in the fiscal following the release of the above application. Received an Oracle Excellence Award for the project.
+Proposed an award winning gamification enabled internal review system where employees could rate the system pages/functionalites within our product, propose changes to them, participate in quizzes etc  to win various rewards.   
+Mentored and trained new resources in the team, thus preparing them for their respective job roles.
+Delivered product bug fixes and implemented additional functionalities to customers based on their requirements with less than 1% defects.
+</p>
+<p class="text-justify text-justify2">
+<strong>Oracle Corporation, Applications Engineer, (July 2012- July 2015)</strong><br/>
+Key member of the cross-functional team that consolidated the Entity Relationship Diagrams (ERD) model which detailed the table loading sequence for all the components within HCM module which helped optimize system performance by more than 20%.
+Brought down the defect backlog of a customer by 80% in a span of 1 month whereas  the normal average was 15-20% for a team.
+One of the very few in the team of 20 members to have worked on all the modules handled by the team.
+Awarded above average rating of 3+ (Exceeding Expectations) at Oracle India for the year 2013 – in just one year after starting my professional career.
+</p>
+<br/><br/>
+<br/><br/>
+</div>
+</section>
+
+
+<section id="section3">
+<br/><br/>
+<header>
+<h2 class="text-center text-primary">EDUCATION</h2>
+</header>
+<div class="container">
+<p class="text-justify text-justify2">
+<strong>Master of Science (M.S) in Computer Science, University of Texas at Dallas (August 2016- Ongoing)</strong><br/>
+Statistics for Data Science, Database Design, Machine Learning, 
+Design and Analysis of Algorithms, Big Data, Artificial Intelligence, Software Testing Verification and Validation, 
+Object Oriented Design
+</p>
+<p class="text-justify text-justify2">
+<strong>Bachelor of Technology (B-Tech) in Computer Science,National Institute of Technology- Calicut (July 2008- April 2012)</strong><br/>
+Data Structures and Algorithms, Database Management Systems, 
+Advanced Data Structures, Principles of Programming Languages, Software Design, Web Programming.
+</p>
+<br/><br/>
+<br/><br/>
+</div>
+</section>
+
+
+
+
+<section id="section4">
+<br/>
+<br/>
+<header>
+<h2 class="text-center text-primary">RESUME</h2>
+</header>
+<div class="container text-center text-primary">
+<br/><br/>
+<object id ="pdf" data="{% static "about/JithinPaul.pdf" %}">
+</object>
+<br/><br/>
+<br/><br/>
+<br/><br/>
+<br/><br/>
+</div>
+</section>
+
+
+
+<section id="section5">
+<br/><br/>
+
+<header>
+<h2 class="text-center text-primary">CONTACT ME</h2>
+</header>
+<div class="container">	
+		<form>
+         <table id="table2">
+		  <tr>
+		       <td>Your Name:<br/>
+		       <input type="text" name="name" size="30"/>
+			   </td>
+			   <td id="td" rowspan="3">Message:<br />
+               <textarea rows="8" cols="50" name="description">
+               </textarea>
+			   </td>
+		  </tr>	   		   
+		  <tr>
+		       <td>Your E-Mail Address:<br/>
+		       <input type="email" name="eMail" size="30"/>
+			   </td>
+			   <td>
+			   </td>
+		  </tr>
+		  <tr>
+		       <td>Subject:<br/>
+		       <input type="text" name="Subject" size="30"/>
+			   </td>
+			   <td>
+			   </td>
+		  </tr>        
+	
+          <tr>
+		       <td>
+			   </td>
+			   <td>
+			   <input class="btn btn-info" type="submit" name="submit" value="Submit" /> <input class="btn btn-info" type="reset" name="reset" value="reset" />
+			   </td>
+		   </tr>
+         </table>		
+		</form>
+		</div>
+		<br/>
+		<br/>
+      </section>
+	  
+
+</article>
+
+ <footer>
+<br/><br/>
+<br/><br/>
+	<p id="foot"><strong>Posted by: Jithin Paul</strong></p>
+ </footer>
+	
+</body>
+</html>

@@ -1,0 +1,148 @@
+<html>
+<head>
+  <title>TicTacToe</title>
+  <meta name="viewport" content="width=600px" />
+
+<style>
+body {
+  text-align: center;
+  font-size: 16px;
+  font-family: 'Comic Sans MS', Helvetica, sans-serif;
+}
+table {
+  margin-left:auto; 
+  margin-right:auto; 
+  width: 551px; 
+  -webkit-user-select: none; 
+}
+td {
+  height: 175px;
+  width: 175px;
+  text-align: center;
+  font-size: 120px;
+  border: 2px solid #cccccc;
+  -webkit-border-radius: 10px;
+}
+#players {
+  margin-left:auto; 
+  margin-right:auto;
+  padding: 20px 10px 10px 10px;
+  width: 511px; 
+  text-align: left;
+}
+#players > div {
+  display: inline-block;
+  padding-right: 25px;
+  color: #cccccc;
+  -webkit-transition-duration: 200ms;
+}
+.button {
+  float: right;
+}
+.current-player {
+  color: black !important;
+  -webkit-transform: scale(1.5);
+}
+.X-marker {
+  color: #663366;
+}
+.X-marker:before {
+  content: "X";
+}
+.O-marker {
+  color: #CC0033;
+}
+.O-marker:before {
+  content: "O";
+}
+img {
+    opacity: 0.0;
+}
+
+img:hover {
+    opacity: 0.5;
+}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+/*
+function move(int x, int y){
+    var data = {'row': x, 'column' : y};
+    $.post(URL, data, function(response){
+        if(response === ''){ alert('Yay!'); }
+        else{ alert('Error! :('); }
+    });
+}
+*/
+
+$(document).ready(function(){
+$("img").click(function() { 
+
+    var id = $(this).attr('id');
+	alert(id);
+    //$("#id").css("opacity", "1.0");
+    //$( "#id" ).unbind( "click", handler );
+    /*switch(id) {
+    case i0:
+        x=0;y=0;
+        break;
+    case i1:
+        x=0;y=1;
+        break;
+    case i2:
+        x=0;y=2;
+        break;
+    case i3:
+        x=1;y=0;
+        break;
+    case i4:
+        x=1;y=1;
+        break;
+    case i5:
+        x=1;y=2;
+        break;
+    case i6:
+        x=2;y=0;
+        break;
+    case i7:
+        x=2;y=1;
+        break;
+    case i8:
+        x=2;y=2;
+        break;
+    default:
+        x=-1;y=-1;
+    }*/
+    //move(x,y);
+});
+});
+</script>
+
+</head>
+<body onload="init();">  
+<div id="players">
+  <div id="X" class="">Player X</div>
+  <div id="O" class="">Player O</div>
+  <input type="button" class="button" value="New Game">
+</div>
+{% load static %}
+
+<table>
+  <tr>
+    <td id="0"><img id = "i0" src="{% static "tictactoe/circle.png" %}" alt="My image"/></td>
+    <td id="1"><img id = "i1" src="{% static "tictactoe/circle.png" %}" alt="My image"/></td>
+    <td id="2"><img id = "i2" src="{% static "tictactoe/circle.png" %}" alt="My image"/></td>
+  </tr>
+  <tr>
+    <td id="3"><img id = "i3" src="{% static "tictactoe/circle.png" %}" alt="My image"/></td>
+    <td id="4"><img id = "i4" src="{% static "tictactoe/circle.png" %}" alt="My image"/></td>
+    <td id="5"><img id = "i5" src="{% static "tictactoe/circle.png" %}" alt="My image"/></td>
+  </tr>
+  <tr>
+    <td id="6"><img id = "i6" src="{% static "tictactoe/circle.png" %}" alt="My image"/></td>
+    <td id="7"><img id = "i7" src="{% static "tictactoe/circle.png" %}" alt="My image"/></td>
+    <td id="8"><img id = "i8" src="{% static "tictactoe/circle.png" %}" alt="My image"/></td>
+  </tr>
+</table>
+</body>
+</html>

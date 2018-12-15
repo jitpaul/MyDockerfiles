@@ -1,0 +1,115 @@
+
+	  
+	  #table2
+	  {
+	      border: 3px solid black;
+		  border-radius: 20px;
+		  border-collapse:separate;
+		  margin:auto;
+	  }
+	  
+	  #td
+	  {
+	      vertical-align:top;
+	  }
+	   
+	  #pdf
+	  {
+		   width : 800px;
+		   height :1000px;
+		   
+	  }
+	  
+	  th,td
+	  {
+		  font-family:"Times New Roman", Times, serif;
+		  font-size : 15px;
+		   		   
+	  }
+	  
+	  td
+	  {
+		  padding: 15px;
+	  }
+
+	  input[type=text] 
+	  {
+          border: none;
+          border-radius: 4px;
+		  background-color: #F5F5F5;
+		  width: 80%;
+		  padding: 14px 20px;
+      }
+	  
+	  input[type=email] 
+	  {
+          border: none;
+          border-radius: 4px;
+		  background-color: #F5F5F5;
+		  width: 80%;
+		  padding: 14px 20px;
+      }
+	  input[type=tel] 
+	  {
+          border: none;
+          border-radius: 4px;
+		  background-color: #F5F5F5;
+		  width: 40%;
+		  padding: 14px 20px;
+      }
+	  
+	  fieldset
+	  {
+	      border: none;
+          border-radius: 4px;
+		  background-color: #F5F5F5;
+		  width: 75%;
+		  padding: 1px 20px;
+	  }
+
+	 
+	  textarea
+	  {
+          border-radius: 4px;
+		  background-color: #F5F5F5;
+		  width: 90%;
+		  padding: 14px 20px;
+		  border: none;
+		  
+	  }
+	  
+	  input[type=submit] 
+	  {
+          width: 40%;
+          background-color: #808080;
+          color: white;
+          padding: 14px 20px;
+          margin: 8px 0;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+      }
+      
+	   input[type=reset] 
+	  {
+          width: 40%;
+          background-color: #808080;
+          color: white;
+          padding: 14px 20px;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+      }
+
+      input[type=submit]:hover 
+	  {
+         background-color: #505050;
+      }
+	  
+	  input[type=reset]:hover 
+	  {
+         background-color: #505050;
+      }
+	  
+
+  
